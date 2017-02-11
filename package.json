@@ -1,0 +1,12 @@
+{
+  "name": "MusicWatch",
+  "version": "0.0.1",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "async": ">=2.1.4",
+    "electron": "^1.4.15",
+    "moment": ">=2.13.0",
+    "ws": ">=2.0.3"
+  }
+}
