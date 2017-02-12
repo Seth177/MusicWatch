@@ -1,0 +1,24 @@
+body {
+	background-color: #2C2F33;
+	color: white;
+}
+
+#title {
+	text-align: center;
+	color: #7289DA;
+}
+
+a {
+	color: #7289DA;
+}
+
+#buttons {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#buttons #u{
+	padding-right: 10px;
+	padding-bottom: 5px;
+	filter: invert();
+}
