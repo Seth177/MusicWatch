@@ -6,15 +6,29 @@
     <link rel="stylesheet" type="text/css" href="css/intro.css"/>
   </head>
   <body>
+    <a href = '#' onclick="openNav()"><img src="images/hb.png" id="hb"/></a>
     <div id="buttons">
       <a href="#" id="minimize" onClick=""><img src="images/u.png" id="u"/></a><a href="#" id="close" onClick=""><img src="images/x.png" id="x"/></a>
     </div>
-    <h1 id='title'>Hello World!</h1>
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#" id='exit' onclick="">Exit</a>
+    </div>
+    <div id="main">
+      <h1 id='title'>Hello World!</h1>
+      We are using Node.js <script>document.write(process.versions.node)</script>,
+      Chromium <script>document.write(process.versions.chrome)</script>,
+      and Electron <script>document.write(process.versions.electron)</script>.<br>
+    </div>
   </body>
-
   <script>
-    require('./js/intro.js')
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+  require('./js/intro.js')
   </script>
